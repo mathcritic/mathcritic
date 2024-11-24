@@ -148,8 +148,27 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Training large language models (LLMs) to spend more time thinking and reflection
+            before responding is crucial for effectively solving complex reasoning tasks in
+            fields such as science, coding, and mathematics. However, the effectiveness of
+            mechanisms like self-reflection and self-correction depends on the model’s capacity
+            to accurately assess its own performance, which can be limited by factors such
+            as initial accuracy, question difficulty, and the lack of external feedback. In this
+            paper, we delve into a two-player paradigm that separates the roles of reasoning and
+            critique models, where the critique model provides step-level feedback to supervise
+            the reasoning (actor) model during both test-time and train-time. We first propose
+            AutoMathCritique, an automated and scalable framework for collecting critique
+            data, resulting in a dataset of responses paired with step-level feedback.
+            Fine-tuning language models with this dataset enables them to generate natural
+            language feedback for mathematical reasoning. We demonstrate that the critique
+            models consistently improve the actor’s performance on difficult queries at test-
+            time, especially when scaling up inference-time computation. Motivated by these
+            findings, we introduce the critique-based supervision to the actor’s self-training
+            process, and propose a critique-in-the-loop self-improvement method. Experiments
+            show that the method improves the actor’s exploration efficiency and solution
+            diversity, especially on challenging queries, leading to a stronger reasoning model.
+            Lastly, we take the preliminary step to explore training self-talk reasoning models
+            via critique data and showcase its potential.          </p>
         </div>
       </div>
     </div>
@@ -219,59 +238,6 @@
   </div>
 </section>
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
